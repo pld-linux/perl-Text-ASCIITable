@@ -5,7 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	ASCIITable
-Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters.
+Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters
+Summary(pl):	Text::ASCIITable - tworzenie ³adne sformatowanych tabel przy u¿yciu znaków ASCII
 Name:		perl-Text-ASCIITable
 Version:	0.15
 Release:	1
@@ -20,12 +21,20 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-
 Text::ASCIITable is a module creates a nice formatted table using
 ASCII characters.
+
 Pretty nifty if you want to output dynamic text to your console or
 other fixed-size-font displays, and at the same time it will display
 it in a nice human-readable, or "cool" way.
+
+%description -l pl
+Text::ASCIITable to modu³ tworz±cy ³adne sformatowane tabele przy
+u¿yciu znaków ASCII.
+
+Jest to przydatne kiedy chcemy stworzyæ dynamiczny tekst na terminalu
+albo innym wyj¶ciu z fontem o sta³ej szeroko¶ci, jednocze¶nie
+wygl±daj±cy ³adnie i czytelnie dla cz³owieka.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
