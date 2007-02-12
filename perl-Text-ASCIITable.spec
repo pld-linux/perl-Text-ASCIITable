@@ -6,7 +6,7 @@
 %define	pdir	Text
 %define	pnam	ASCIITable
 Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters
-Summary(pl):	Text::ASCIITable - tworzenie ≥adne sformatowanych tabel przy uøyciu znakÛw ASCII
+Summary(pl.UTF-8):   Text::ASCIITable - tworzenie ≈Çadne sformatowanych tabel przy u≈ºyciu znak√≥w ASCII
 Name:		perl-Text-ASCIITable
 Version:	0.17
 Release:	1
@@ -28,13 +28,13 @@ Pretty nifty if you want to output dynamic text to your console or
 other fixed-size-font displays, and at the same time it will display
 it in a nice human-readable, or "cool" way.
 
-%description -l pl
-Text::ASCIITable to modu≥ tworz±cy ≥adne sformatowane tabele przy
-uøyciu znakÛw ASCII.
+%description -l pl.UTF-8
+Text::ASCIITable to modu≈Ç tworzƒÖcy ≈Çadne sformatowane tabele przy
+u≈ºyciu znak√≥w ASCII.
 
-Jest to przydatne kiedy chcemy stworzyÊ dynamiczny tekst na terminalu
-albo innym wyj∂ciu z fontem o sta≥ej szeroko∂ci, jednocze∂nie
-wygl±daj±cy ≥adnie i czytelnie dla cz≥owieka.
+Jest to przydatne kiedy chcemy stworzyƒá dynamiczny tekst na terminalu
+albo innym wyj≈õciu z fontem o sta≈Çej szeroko≈õci, jednocze≈õnie
+wyglƒÖdajƒÖcy ≈Çadnie i czytelnie dla cz≈Çowieka.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
