@@ -6,7 +6,7 @@
 %define	pdir	Text
 %define	pnam	ASCIITable
 Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters
-Summary(pl.UTF-8):   Text::ASCIITable - tworzenie ładne sformatowanych tabel przy użyciu znaków ASCII
+Summary(pl.UTF-8):	Text::ASCIITable - tworzenie ładne sformatowanych tabel przy użyciu znaków ASCII
 Name:		perl-Text-ASCIITable
 Version:	0.17
 Release:	1
