@@ -8,13 +8,13 @@
 Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters
 Summary(pl.UTF-8):	Text::ASCIITable - tworzenie ładne sformatowanych tabel przy użyciu znaków ASCII
 Name:		perl-Text-ASCIITable
-Version:	0.17
+Version:	0.18
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4fb516df15271f68d0a47e4afadf83be
+# Source0-md5:	25fea1cef17be49a6da1d9b5267fba97
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
