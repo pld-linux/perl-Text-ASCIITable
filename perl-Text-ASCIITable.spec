@@ -7,14 +7,15 @@
 Summary:	Text::ASCIITable - Create a nice formatted table using ASCII characters
 Summary(pl.UTF-8):	Text::ASCIITable - tworzenie ładne sformatowanych tabel przy użyciu znaków ASCII
 Name:		perl-Text-ASCIITable
-Version:	0.20
-Release:	2
+Version:	0.22
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	13dce0bcfa2484501199222bab251f87
-URL:		http://search.cpan.org/dist/Text-ASCIITable/
+Source0:	https://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	6c34e6ed4575d59e8a51cbd4341e85f2
+URL:		https://metacpan.org/release/Text-ASCIITable
+BuildRequires:	perl-Module-Build >= 0.38
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -40,17 +41,18 @@ wyglądający ładnie i czytelnie dla człowieka.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	--installdirs=vendor
+./Build
 
-%{?with_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install \
+	--destdir=$RPM_BUILD_ROOT \
+	--create_packlist=0
 
 %clean
 rm -rf $RPM_BUILD_ROOT
